@@ -53,13 +53,13 @@ SudokuVerifier v = new SudokuVerifier();
 	@Test
 	public void testInvalidColumnString() {
 		int a = v.verify(invalidColumn);
-		assertEquals("Dublicate number on row", a, -4);
+		assertEquals("Dublicate number on column", a, -4);
 	}
 	
 	@Test
 	public void testWithZeroString() {
 		int a = v.verify(hasZero);
-		assertEquals("Dublicate number on row", a, -1);
+		assertEquals("invalid number", a, -1);
 	}
 	
 }
